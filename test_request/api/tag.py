@@ -50,18 +50,18 @@ class Tag(BaseApi):
         return self.send_api(data)
 
     def delete(self,tag_id):
-        data={
-            "method": "post",
-            "url": "https://qyapi.weixin.qq.com/cgi-bin/externalcontact/del_corp_tag",
-            "params": {
-                "access_token": self.token
-            },
-            "json": {
-                "tagid": [
-                    tag_id
-                ]
-            }
-        }
+        # data={
+        #     "method": "post",
+        #     "url": "https://qyapi.weixin.qq.com/cgi-bin/externalcontact/del_corp_tag",
+        #     "params": {
+        #         "access_token": self.token
+        #     },
+        #     "json": {
+        #         "tagid": [
+        #             tag_id
+        #         ]
+        #     }
+        # }
         return self.send_api(data)
 
 

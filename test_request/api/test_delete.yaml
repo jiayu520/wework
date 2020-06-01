@@ -1,0 +1,6 @@
+method: post
+url: https://qyapi.weixin.qq.com/cgi-bin/externalcontact/del_corp_tag
+params:
+    access_token: "$token"
+json:
+    tagid: "$tag_id"
